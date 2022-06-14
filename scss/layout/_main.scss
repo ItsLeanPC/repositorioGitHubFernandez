@@ -1,0 +1,36 @@
+/* banner */
+.bannerPrincipal{
+    text-align: center;
+}
+/* infoFotos */
+.categoriaServicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40rem;
+    .servicioBox {
+        width: min-content;
+        &:hover{
+            transform: scale(1.3);
+        }
+        .serImg {
+            width: 23rem;
+        }
+    }
+}
+/* video */
+.video {
+    display: flex;
+    justify-content: center;
+    .videoSource {
+        width: 650px; 
+        height: 366px;
+    }
+    .videoSocials {
+        display: flex;
+        justify-content: center;
+        .videoTextLogo {
+            font-size: 13pt;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+/* header */
+.headerNav {
+    grid-area: header;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $orogreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .logoImgName {
+        display: flex;
+        align-items: center;
+        &:hover{
+            transform: scale(1.2);
+        }
+        .logo {
+            height: 6rem;
+        }
+    }
+    .nav-link {
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -1,0 +1,28 @@
+/* Contacto */
+.sectionform{
+    .divLogoContacto{
+        margin-top: 2rem;
+        text-align: center;
+        .logoContacto{
+            height: 70px;
+            width: 70px;
+        }
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        .formTitle{
+            margin: 1rem;
+            font-size: 25pt;
+            text-align: center;
+        }
+        .formTextArea{
+            width: 600px;
+            height: 200px;
+        }
+        .formButton{
+            text-align: end;
+        }
+    }
+}
