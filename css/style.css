@@ -25,17 +25,16 @@ body {
   background-color: #00882d;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  color: #131715; }
   .headerNav .logoImgName {
     display: flex;
     align-items: center; }
-    .headerNav .logoImgName:hover {
-      transform: scale(1.2); }
     .headerNav .logoImgName .logo {
       height: 6rem; }
   .headerNav .nav-link {
     text-decoration: none;
-    color: black; }
+    color: #131715; }
 
 /* Main */
 /* banner */
@@ -47,25 +46,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 40rem; }
+  color: #131715;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
   .categoriaServicio .servicioBox {
     width: min-content; }
     .categoriaServicio .servicioBox:hover {
-      transform: scale(1.3); }
+      transform: scale(1.1); }
     .categoriaServicio .servicioBox .serImg {
       width: 23rem; }
 
 /* video */
-.video {
+.video, .video .videoSocials {
   display: flex;
   justify-content: center; }
   .video .videoSource {
     width: 650px;
     height: 366px; }
   .video .videoSocials {
-    display: flex;
-    justify-content: center; }
+    margin: 1rem; }
     .video .videoSocials .videoTextLogo {
+      color: #131715;
       font-size: 13pt; }
 
 /* Contacto */
@@ -100,6 +101,5 @@ body {
   justify-content: center;
   align-items: center; }
   .footer .textoFooter {
-    margin-top: 1rem; }
-    .footer .textoFooter:hover {
-      transform: scale(1.15); }
+    margin-top: 1rem;
+    color: #131715; }

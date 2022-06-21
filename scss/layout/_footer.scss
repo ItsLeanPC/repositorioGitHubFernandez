@@ -7,8 +7,9 @@
     align-items: center;
     .textoFooter {
         margin-top: 1rem;
-        &:hover{
-            transform: scale(1.15);
-        }
+        color:$oroblack;
+        // &:hover{
+        //     transform: scale(1.15);
+        // }
     }
 }

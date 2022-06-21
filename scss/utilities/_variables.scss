@@ -1,1 +1,7 @@
-$orogreen: #00882d;
+$colorPallet:(
+    orogreen: #00882d,
+    black: #131715,
+);
+
+$orogreen: map-get($colorPallet, orogreen);
+$oroblack: map-get($colorPallet, black);
