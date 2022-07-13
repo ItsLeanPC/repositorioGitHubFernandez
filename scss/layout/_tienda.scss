@@ -1,0 +1,49 @@
+/* tienda */
+.tiendaProductos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3rem 0rem;
+}
+.TiendaCard{
+    width: min-content;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 300ms;
+    margin-top: 1rem;
+    padding: 1rem;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.tiendaImg{
+    width: 350px;
+    margin-bottom: 0.2rem;
+}
+
+.tiendaText{
+    width: 350px;
+}
+
+.tiendaTitle{
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+.proveedores{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.proveedoresImg{
+    width: 200px;
+    margin:0rem 3rem;
+}

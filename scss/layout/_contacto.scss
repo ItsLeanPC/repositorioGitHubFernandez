@@ -23,6 +23,28 @@
         }
         .formButton{
             text-align: end;
+            margin: 1rem;
         }
+    }
+    .form form{
+        margin: 1rem;
+        padding: 1rem;
+        background: rgba(150,150,150,0.1);
+        border-radius: 16px;
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+@media(max-width:705px){
+    .form{
+        .formTextArea{
+            width: 200px;
+            height: 300px;
+        }
+    }
+    .form form{
+        width: 30rem;
     }
 }

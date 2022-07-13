@@ -5,11 +5,32 @@
     background-color: $orogreen;
     justify-content: center;
     align-items: center;
-    .textoFooter {
-        margin-top: 1rem;
-        color:$oroblack;
-        // &:hover{
-        //     transform: scale(1.15);
-        // }
+    .footerLinks {
+        width: 311px;
+    }
+    .footerLogo {
+        align-self: center;
+    }
+    .socialLinks {
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        text-decoration: none;
+        .socialIcons {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+        .textoFooter {
+            // margin-top: 1rem;
+            color:$oroblack;
+            font-size: 1.4rem;
+            margin-bottom: 0.2rem;
+            margin-right: 0.3rem;
+            margin-left: 0.3rem;
+        }
+    }
+    .socialLinks2 {
+        @extend .socialLinks;
+        justify-content: end;
     }
 }

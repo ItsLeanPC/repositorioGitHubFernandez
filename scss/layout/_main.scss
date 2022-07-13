@@ -1,39 +1,117 @@
 /* banner */
 .bannerPrincipal{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/assets/img/Banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
     text-align: center;
+    color: white;
+    .bannerTittle {
+        font-weight: bold;
+        text-shadow: 0px 0px 4px black;
+    }
+    .bannerText {
+        font-size: 1.4rem; 
+        text-shadow: 0px 0px 4px black;
+    }
 }
 /* infoFotos */
+.servicioTittle {
+    margin-top: 3rem;
+    font-weight: bold;
+}
+.container {
+    margin: 0;
+    max-width: 100%;
+}
 .categoriaServicio {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color:$oroblack;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 5rem;
+    width: auto;
     .servicioBox {
         width: min-content;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: 300ms;
+        margin-top: 1rem;
         &:hover{
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
         .serImg {
             width: 23rem;
+            margin: 1rem 0.2rem 0.58rem 0.2rem;
         }
     }
 }
 /* video */
 .video {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 3rem;
+    width: fit-content;
+    .vidtext {
+        width: 20rem;
+        margin-left: 5rem;
+        .vidTittle{
+            font-weight: bold;
+            font-size: 1.59rem;
+            margin-bottom: 1rem;
+        }
+        .videoSocials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+                .videoSocialsIcon{
+                    width: 30px;
+                }
+                .videoTextLogo {
+                    color:$oroblack;
+                    font-size: 13pt;
+                }
+            }
+    }
     .videoSource {
         width: 650px; 
         height: 366px;
     }
-    .videoSocials {
-    @extend .video;
-    margin: 1rem;
-        .videoTextLogo {
-            color:$oroblack;
-            font-size: 13pt;
+}
+@media(max-width:1140px){
+    .video{
+        flex-direction: column;
+        .yt{
+            width: 384;
+            height: 216;
+        }
+        .vidtext{
+            margin-top: 1rem;
+            margin-left: 0rem;
+        }
+        .videoSocials{
+            width: auto;
+            display: block;
+            justify-items: center;
         }
     }
 }

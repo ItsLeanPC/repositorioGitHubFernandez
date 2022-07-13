@@ -4,14 +4,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 html {
     height: 100%;
 }
 body{
-    background-image: radial-gradient(circle, #f2ffe9, #edffe2, #e7ffdc, #e1ffd5, #dbffcf);
+    // background-image: linear-gradient(to left bottom, #fae9d7, #ffe3a9, #f5e27b, #d8e64d, #a8eb12);
+    // background-repeat: no-repeat;
+    // background: linear-gradient(to left bottom, #fae9d7, #ffe3a9, #f5e27b, #d8e64d, #a8eb12);
+    // background-attachment: fixed;
+    background-color: #FFF7E7;
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
     text-align: center;
-    padding: 0px;
+    width: 100%;
 }

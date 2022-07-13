@@ -11,11 +11,11 @@ html {
   height: 100%; }
 
 body {
-  background-image: radial-gradient(circle, #f2ffe9, #edffe2, #e7ffdc, #e1ffd5, #dbffcf);
+  background-color: #FFF7E7;
   font-family: 'Open Sans', sans-serif;
   min-height: 100%;
   text-align: center;
-  padding: 0px; }
+  width: 100%; }
 
 /* header */
 /* header */
@@ -39,35 +39,105 @@ body {
 /* Main */
 /* banner */
 .bannerPrincipal {
-  text-align: center; }
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/Banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  color: white; }
+  .bannerPrincipal .bannerTittle {
+    font-weight: bold;
+    text-shadow: 0px 0px 4px black; }
+  .bannerPrincipal .bannerText {
+    font-size: 1.4rem;
+    text-shadow: 0px 0px 4px black; }
 
 /* infoFotos */
+.servicioTittle {
+  margin-top: 3rem;
+  font-weight: bold; }
+
+.container {
+  margin: 0;
+  max-width: 100%; }
+
 .categoriaServicio {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: #131715;
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  width: auto; }
   .categoriaServicio .servicioBox {
-    width: min-content; }
+    width: min-content;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 300ms;
+    margin-top: 1rem; }
     .categoriaServicio .servicioBox:hover {
-      transform: scale(1.1); }
+      transform: scale(1.05); }
     .categoriaServicio .servicioBox .serImg {
-      width: 23rem; }
+      width: 23rem;
+      margin: 1rem 0.2rem 0.58rem 0.2rem; }
 
 /* video */
-.video, .video .videoSocials {
+.video {
   display: flex;
-  justify-content: center; }
+  align-items: center;
+  margin: 5rem auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 3rem;
+  width: fit-content; }
+  .video .vidtext {
+    width: 20rem;
+    margin-left: 5rem; }
+    .video .vidtext .vidTittle {
+      font-weight: bold;
+      font-size: 1.59rem;
+      margin-bottom: 1rem; }
+    .video .vidtext .videoSocials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto; }
+      .video .vidtext .videoSocials .videoSocialsIcon {
+        width: 30px; }
+      .video .vidtext .videoSocials .videoTextLogo {
+        color: #131715;
+        font-size: 13pt; }
   .video .videoSource {
     width: 650px;
     height: 366px; }
-  .video .videoSocials {
-    margin: 1rem; }
-    .video .videoSocials .videoTextLogo {
-      color: #131715;
-      font-size: 13pt; }
+
+@media (max-width: 1140px) {
+  .video {
+    flex-direction: column; }
+    .video .yt {
+      width: 384;
+      height: 216; }
+    .video .vidtext {
+      margin-top: 1rem;
+      margin-left: 0rem; }
+    .video .videoSocials {
+      width: auto;
+      display: block;
+      justify-items: center; } }
 
 /* Contacto */
 /* Contacto */
@@ -90,7 +160,115 @@ body {
     width: 600px;
     height: 200px; }
   .sectionform .form .formButton {
-    text-align: end; }
+    text-align: end;
+    margin: 1rem; }
+
+.sectionform .form form {
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(150, 150, 150, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); }
+
+@media (max-width: 705px) {
+  .form .formTextArea {
+    width: 200px;
+    height: 300px; }
+  .form form {
+    width: 30rem; } }
+
+/* Nosotros*/
+/* nosotros */
+.nosotros {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4rem;
+  background: rgba(150, 150, 150, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); }
+
+.imagenNosotros {
+  height: 500px; }
+
+.nosotrosTitle {
+  font-size: 25pt;
+  margin-bottom: 0.5rem; }
+
+.nosotrosText {
+  width: 700px; }
+
+/* Tienda*/
+/* tienda */
+.tiendaProductos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 3rem 0rem; }
+
+.TiendaCard {
+  width: min-content;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 300ms;
+  margin-top: 1rem;
+  padding: 1rem; }
+  .TiendaCard:hover {
+    transform: scale(1.05); }
+
+.tiendaImg {
+  width: 350px;
+  margin-bottom: 0.2rem; }
+
+.tiendaText {
+  width: 350px; }
+
+.tiendaTitle {
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 3rem; }
+
+.proveedores {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem; }
+
+.proveedoresImg {
+  width: 200px;
+  margin: 0rem 3rem; }
+
+/* Sucursales */
+/* sucursales */
+.ubicacion {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.ubiImage {
+  width: 700px;
+  margin-left: -2rem; }
+
+.UbiText {
+  width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: -4rem; }
+
+.ubiMap {
+  margin-left: -4rem; }
 
 /* footer */
 /* footer */
@@ -100,6 +278,23 @@ body {
   background-color: #00882d;
   justify-content: center;
   align-items: center; }
-  .footer .textoFooter {
-    margin-top: 1rem;
-    color: #131715; }
+  .footer .footerLinks {
+    width: 311px; }
+  .footer .footerLogo {
+    align-self: center; }
+  .footer .socialLinks, .footer .socialLinks2 {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    text-decoration: none; }
+    .footer .socialLinks .socialIcons, .footer .socialLinks2 .socialIcons {
+      width: 1.6rem;
+      height: 1.6rem; }
+    .footer .socialLinks .textoFooter, .footer .socialLinks2 .textoFooter {
+      color: #131715;
+      font-size: 1.4rem;
+      margin-bottom: 0.2rem;
+      margin-right: 0.3rem;
+      margin-left: 0.3rem; }
+  .footer .socialLinks2 {
+    justify-content: end; }
